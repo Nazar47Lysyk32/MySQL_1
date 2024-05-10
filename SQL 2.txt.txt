@@ -1,0 +1,39 @@
+use testdb;
+
+-- Task 1
+-- select name, description
+-- from products
+-- where price > 140;
+
+-- Task 2
+-- update products
+-- set description = 'makeup'
+-- where id = 2;
+
+-- select description
+-- from products
+-- where id = 2;
+
+-- Task 3
+-- delete 
+-- from products
+-- where id = 1;
+
+-- Task 4
+-- select *
+-- from products
+-- where name like '%PC%';
+-- order by price;
+
+-- Task 5
+-- select * 
+-- from products
+-- where name like '%hi%';
+
+-- select * 
+-- from products
+-- where description like 'this%';
+
+-- select *
+-- from products
+-- where description is null

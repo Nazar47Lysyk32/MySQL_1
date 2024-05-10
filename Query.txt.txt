@@ -1,0 +1,30 @@
+use testdb;
+
+drop table if exists users;
+drop table if exists products;
+
+create table if not exists users(
+id int primary key auto_increment,
+name varchar(255),
+age int,
+email varchar(255)
+);
+
+insert into users(name, age, email) values
+('kolya', 19, 'kalyan@gmail.com'),
+('vika', 16, 'viikaa@gmail.com'),
+('andriy', 28, 'andryy@gmail.com'),
+('katya', 34, 'ketrin@gmail.com'),
+('vasya',9, 'vvassia@gmail.com');
+
+create table if not exists products(
+id int primary key auto_increment,
+name varchar(255),
+description text,
+price decimal(10,2)
+);
+
+insert into products(name, description, price) values
+('PC', technic, 34000),
+('pomade', 'makeup', 140),
+('beer', 'drink', 15);
